@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register - USKT</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:grid;
+    place-items:center;
+    background:url("uskt.jpg") no-repeat center center/cover;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    backdrop-filter:blur(8px);
+    z-index:-1;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:15px 0;
+    text-align:center;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00e676;
+}
+
+.container{
+    width:350px;
+    padding:40px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+    text-align:center;
+    color:white;
+}
+
+.container h1{
+    margin-bottom:25px;
+}
+
+.input-box{
+    width:100%;
+    margin:15px 0;
+}
+
+.input-box input{
+    width:100%;
+    padding:12px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:rgba(255,255,255,0.2);
+    color:white;
+}
+
+.input-box input::placeholder{
+    color:#eee;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#00e676;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:15px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#00c853;
+}
+
+.login-link{
+    margin-top:15px;
+    font-size:14px;
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="home.html">Home</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="my web.html">About Us</a>
+    <a href="uskt services.html">Services</a>
+</nav>
+
+<div class="container">
+    <h1>Register</h1>
+
+    <div class="input-box">
+        <input type="text" placeholder="Full Name">
+    </div>
+
+    <div class="input-box">
+        <input type="email" placeholder="Email">
+    </div>
+
+    <div class="input-box">
+        <input type="password" placeholder="Password">
+    </div>
+
+    <div class="input-box">
+        <input type="password" placeholder="Confirm Password">
+    </div>
+
+    <button>Sign Up</button>
+
+    <div class="login-link">
+        <p>Already have an account?</p>
+        <button onclick='location.href="home.html"'>Login</button>
+    </div>
+</div>
+
+</body>
+</html>

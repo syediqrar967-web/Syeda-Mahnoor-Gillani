@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Services</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("USKT.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:15px 0;
+    text-align:center;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00e676;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+    font-size: 36px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.box {
+    background-color: #0d1f77;
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-8px);
+}
+
+.box h2 {
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.box p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.box.small {
+    width: 250px;
+}
+
+.box.small h2 {
+    font-size: 20px;
+}
+
+.box.small p {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.btn-center {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="home.html">Home</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="my web.html">About Us</a>
+    <a href="uskt services.html">Services</a>
+</nav>
+
+<h1>Our Services</h1>
+
+<div class="container">
+
+    <div class="box">
+        <h2>Campus Facilities</h2>
+        <p>
+            Library<br>
+            Sports Complex<br>
+            Cafeteria<br>
+            Transport Facility<br>
+            Medical Assistance
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Digital & IT Services</h2>
+        <p>
+            Online Learning Portal<br>
+            Student Management System<br>
+            Wi-Fi Enabled Campus<br>
+            Computer Labs
+        </p>
+    </div>
+
+    <div class="box small">
+        <h2>Research & Innovation</h2>
+        <p>
+            Research Labs<br>
+            Industry Collaboration<br>
+            Innovation Projects<br>
+            Final Year Project Support
+        </p>
+    </div>
+
+    <div class="box small">
+        <h2>Additional Services</h2>
+        <p>
+            Career Counseling<br>
+            Internship Placement<br>
+            Academic Advising<br>
+            Scholarship & Financial Aid
+        </p>
+    </div>
+
+</div>
+
+<div class="btn-center">
+    <button type="button" onclick="location.href='USKT (2) - Copy.html'">
+        Click here
+    </button>
+</div>
+
+</body>
+</html>

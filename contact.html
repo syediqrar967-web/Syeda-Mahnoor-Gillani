@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>University of Sialkot - Contact Us</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    color:white;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image:url("USKT.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    filter:blur(5px);
+    z-index:-1;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:15px 0;
+    background:rgba(0,0,0,0.7);
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00e676;
+}
+
+.section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:80px;
+}
+
+.content{
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:10px;
+    width:400px;
+    text-align:center;
+}
+
+input, textarea{
+    width:100%;
+    padding:8px;
+    border:none;
+    border-radius:5px;
+}
+
+input[type="submit"]{
+    margin-top:10px;
+    cursor:pointer;
+    background:#00e676;
+    font-weight:bold;
+}
+
+input[type="submit"]:hover{
+    background:#00c853;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+     <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="home.html">Home</a>
+    <a href="contact.html">Contact Us</a>
+   <a href="my web.html">about</a>
+    <a href="uskt services.html">services</a>
+</nav>
+
+<div class="section">
+<div class="content">
+
+<h1>Contact Us</h1>
+<p>If you have any question, feel free to contact us.</p>
+
+<form>
+
+<input type="text" name="name" placeholder="Your Name"><br><br>
+
+
+<input type="email" name="email" placeholder="Your Email"><br><br>
+<textarea rows="5" placeholder="Your Message"></textarea><br><br>
+
+<input type="submit" value="Submit">
+</form>
+
+<h3>Contact Information</h3>
+<p><strong>Address:</strong> University of Sialkot, Pakistan</p>
+<p><strong>Phone:</strong> +92-000-0000000</p>
+<p><strong>Email:</strong> info@uskt.edu.pk</p>
+<button onclick='location.href="my web.html"'>click here</button>
+</div>
+</div>
+
+</body>
+</html>
